@@ -16,7 +16,7 @@ return [
 
     'allowed_methods' => ['*'], // すべてのHTTPメソッドを許可（GET, POSTなど）
 
-    'allowed_origins' => ['http://localhost:3000'], // Reactの開発サーバー
+    'allowed_origins' => ['https://line-chat.fun', 'https://www.line-chat.fun'], // Reactの開発サーバー
 
     'allowed_origins_patterns' => [],
 

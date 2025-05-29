@@ -34,7 +34,9 @@ class MessageController extends Controller
             'created_at' => now(),
         ]);
 
+        //return response()->json($message->load('user'));
         return new MessageResource($message->load('user'));
+
     }
 
     /**
