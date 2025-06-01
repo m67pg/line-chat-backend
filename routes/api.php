@@ -8,3 +8,4 @@ Route::middleware('auth:sanctum')->get('/messages', [MessageController::class, '
 Route::middleware('auth:sanctum')->post('/messages', [MessageController::class, 'store']);
 
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
